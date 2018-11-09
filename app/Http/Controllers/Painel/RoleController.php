@@ -16,7 +16,7 @@ class RoleController extends Controller
     {
         $this->role = $role;
         
-        if( Gate::denies('view_post') ) 
+        if( Gate::denies('admin') ) 
             return redirect()->back();
     }
     

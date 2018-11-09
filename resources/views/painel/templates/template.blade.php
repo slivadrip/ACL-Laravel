@@ -27,7 +27,7 @@
                         <img src="{{url('assets/painel/imgs/acl-branca.png')}}" alt="acl" class="logo">
                     </a>
                 </li>
-                @can('admin')
+                @can('user')
                 <li class="col-md-2 text-center">
                     <a href="/painel/users">
                         <img src="{{url('assets/painel/imgs/perfil-acl.png')}}" alt="Meu Perfil" class="img-menu">

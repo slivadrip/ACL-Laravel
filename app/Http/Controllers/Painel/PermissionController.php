@@ -15,11 +15,11 @@ class PermissionController extends Controller
     public function __construct(Permission $permission)
     {
         $this->permission = $permission;
-        
-      /*  if( Gate::denies('admin') ) 
-            return abort(403, 'Não Autorizado!');
 
-            */
+            if( Gate::denies('admin') ) 
+            return redirect()->back();
+
+           
     }
     
     public function index()
